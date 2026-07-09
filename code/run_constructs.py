@@ -186,7 +186,7 @@ if __name__=="__main__":
             pilot={t:items[t] for t in ["bbq","biasasker","discrimeval"]}
             _u["ok"]=_u["empty"]=_u["err"]=0
             out=run(cons,pilot,reps=1)
-            json.dump(out,open(f"{cons}_pilot.json","w"))
+            json.dump(out,open(os.path.join(DATA,f"{cons}_pilot.json"),"w"))
             print(f"{cons} PILOT ok={_u['ok']} empty={_u['empty']} err={_u['err']} rows={len(out)}")
         else:
             _u["ok"]=_u["empty"]=_u["err"]=0

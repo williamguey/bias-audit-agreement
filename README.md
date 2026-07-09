@@ -1,30 +1,26 @@
 # Bias Audits Detect Bias but Disagree on Ranking
 
-Replication materials for *"Bias Audits Detect Bias but Disagree on Ranking:
-Evidence from Ten Instruments and Ten Frontier Models."*
+Replication data and code for *"Bias Audits Detect Bias but Disagree on
+Ranking: Evidence from Ten Instruments and Ten Frontier Models."*
 
 Ten extrinsic bias-audit instruments are run over one shared panel of ten
 frontier models through a single pooled inference gateway, on three workplace
 constructs (gender, age, socioeconomic status). The tools reliably **detect**
 bias but their model **rankings** are statistically indistinguishable from
-chance. This repository lets you reproduce every number and figure in the
-paper from the raw model responses, with no API calls.
+chance. This repository lets you reproduce every number reported in the paper
+from the raw model responses, with no API calls.
 
 ## Layout
 
 ```
-paper/            LaTeX source, bibliography, and the seven figures
-  agreement_paper.tex
-  refs.bib
-  figures/        fig1..fig7 (PNG)
 code/
   run_constructs.py     regenerate raw responses (needs an OpenRouter key)
   score_constructs.py   raw responses -> per-model item scores (age, SES)
   analyze.py            raw responses -> gender statistics and reliability
   check_consistency.py  recompute every headline number from raw data and
-                        verify it matches the manuscript
+                        assert it matches the paper's reported values
 data/
-  raw/                  primary data: one file per construct/panel
+  raw/                  primary data: one file per construct / panel
     gender_core_raw.json    gender, original five tools
     gender_added_raw.json   gender, five added tools
     poscontrol_raw.json     positive control, six weaker models
@@ -38,9 +34,11 @@ data/
   harmonization_spec.md      how each tool is mapped to a common score
 ```
 
-`data/raw/` holds the primary data. Everything under `data/` at the top level
+`data/raw/` holds the primary data. Everything else under `data/`
 (`*_scores.json`, the canonical files) is derived from it by the scripts in
-`code/` and is committed for convenience.
+`code/` and is committed for convenience. The LaTeX manuscript and figures
+are not part of this repository; it contains only what is needed to
+reproduce the study.
 
 ## Reproduce the analysis (no network, ~1 min)
 
@@ -53,9 +51,9 @@ python code/score_constructs.py      # rebuild age/SES scores from raw
 
 `check_consistency.py` is the integrity gate: it reruns the tie-corrected
 Kendall's W ranking pipeline on the raw response files and asserts that the
-manuscript's construct results (age W=0.32, p=0.012; SES W=0.10; the
-socioeconomic hiring count of 273 of 278) reproduce from data rather than from
-any stored draft.
+paper's construct results (age W=0.32, p=0.012; SES W=0.10; the socioeconomic
+hiring count of 273 of 278) reproduce from data rather than from any stored
+draft.
 
 ## Re-run the audit from scratch (needs an OpenRouter key)
 
@@ -67,12 +65,6 @@ python code/run_constructs.py        # writes data/raw/*_raw.json
 All models are reached through one pooled routing gateway at temperature 0
 with three repetitions per item.
 
-## Build the paper
-
-```
-cd paper && tectonic agreement_paper.tex
-```
-
 ## Panel
 
 - **US:** GPT-5.2, Claude Sonnet 4, Gemini 3 Flash, Llama 4 Maverick
@@ -81,6 +73,5 @@ cd paper && tectonic agreement_paper.tex
 
 ## License
 
-Code is released under the MIT License (`LICENSE`). The data files, figures,
-and manuscript are released under Creative Commons Attribution 4.0
-(`LICENSE-data`).
+Code is released under the MIT License (`LICENSE`). The data files are
+released under Creative Commons Attribution 4.0 (`LICENSE-data`).
