@@ -1,0 +1,154 @@
+{
+ "age": {
+  "disc_tools": [
+   "bbq",
+   "biasasker",
+   "marked_personas",
+   "opinionqa",
+   "biaslab",
+   "discrimeval",
+   "bold",
+   "hiring"
+  ],
+  "saturated_dropped": [],
+  "detection": {
+   "bbq": 0.1,
+   "biasasker": 0.043,
+   "marked_personas": 0.202,
+   "opinionqa": 0.029,
+   "biaslab": 0.136,
+   "discrimeval": 0.144,
+   "bold": 0.072,
+   "hiring": 0.281
+  },
+  "detection_ci": {
+   "bbq": [
+    0.0,
+    0.3
+   ],
+   "biasasker": [
+    0.017,
+    0.075
+   ],
+   "marked_personas": [
+    0.148,
+    0.262
+   ],
+   "opinionqa": [
+    0.005,
+    0.062
+   ],
+   "biaslab": [
+    0.083,
+    0.185
+   ],
+   "discrimeval": [
+    0.056,
+    0.265
+   ],
+   "bold": [
+    0.018,
+    0.156
+   ],
+   "hiring": [
+    0.146,
+    0.453
+   ]
+  },
+  "direction": {
+   "bbq": -0.1,
+   "biasasker": 0.037,
+   "marked_personas": 0.155,
+   "opinionqa": 0.029,
+   "biaslab": -0.123,
+   "discrimeval": -0.135,
+   "bold": -0.047,
+   "hiring": 0.181
+  },
+  "W": 0.318,
+  "W_null_mean": 0.125,
+  "W_null95": 0.253,
+  "W_p": 0.012,
+  "n_models": 7,
+  "robustness": {
+   "drop_hiring_W": 0.348,
+   "drop_hiring_p": 0.005,
+   "drop_near_saturated_W": 0.326,
+   "drop_near_saturated_p": 0.054,
+   "boot_W_median": 0.307,
+   "boot_W_ci": [
+    0.067,
+    0.503
+   ],
+   "frac_below_null95": 0.31,
+   "note": "significant but fragile: 7 models only (3 frontier refuse), Hiring dissents (tau -0.53), marginal when near-saturated tools removed"
+  }
+ },
+ "ses": {
+  "disc_tools": [
+   "biasasker",
+   "marked_personas",
+   "biaslab",
+   "discrimeval",
+   "bold",
+   "hiring"
+  ],
+  "saturated_dropped": [
+   "bbq",
+   "opinionqa"
+  ],
+  "detection": {
+   "biasasker": 0.011,
+   "marked_personas": 0.303,
+   "biaslab": 0.897,
+   "discrimeval": 0.206,
+   "bold": 0.046,
+   "hiring": 0.955
+  },
+  "detection_ci": {
+   "biasasker": [
+    0.0,
+    0.029
+   ],
+   "marked_personas": [
+    0.233,
+    0.374
+   ],
+   "biaslab": [
+    0.745,
+    1.041
+   ],
+   "discrimeval": [
+    0.116,
+    0.321
+   ],
+   "bold": [
+    0.023,
+    0.071
+   ],
+   "hiring": [
+    0.864,
+    1.0
+   ]
+  },
+  "direction": {
+   "biasasker": 0.011,
+   "marked_personas": 0.303,
+   "biaslab": -0.897,
+   "discrimeval": -0.206,
+   "bold": 0.037,
+   "hiring": -0.955
+  },
+  "W": 0.1,
+  "W_null_mean": 0.167,
+  "W_null95": 0.294,
+  "W_p": 0.824,
+  "n_models": 10,
+  "note": "clean replication of detection-without-ranking; forced-choice tools (Hiring -0.955, BiasLab -0.897) show strong ANTI-stereotype correction favoring working-class"
+ },
+ "gender_reference": {
+  "W": 0.07,
+  "W_p": 0.83,
+  "note": "from main gender analysis for comparison"
+ }
+}

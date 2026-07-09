@@ -1,0 +1,11 @@
+provenance,maker,display,slug,is_reasoning,ctx,in_$M,out_$M,run_catalog_date
+US,OpenAI,GPT-5.2,openai/gpt-5.2,True,400000,1.75,14.0,2026-07-06
+US,Anthropic,Claude Sonnet 4,anthropic/claude-sonnet-4,False,1000000,3.0,15.0,2026-07-06
+US,Google,Gemini 3 Flash,google/gemini-3-flash-preview,False,1048576,0.5,3.0,2026-07-06
+US,Meta,Llama 4 Maverick,meta-llama/llama-4-maverick,False,1048576,0.15,0.6,2026-07-06
+CN,Alibaba,Qwen3-235B,qwen/qwen3-235b-a22b-2507,False,262144,0.09,0.1,2026-07-06
+CN,DeepSeek,DeepSeek V3.2,deepseek/deepseek-v3.2,False,131072,0.229,0.343,2026-07-06
+CN,Zhipu,GLM-4.7,z-ai/glm-4.7,True,202752,0.4,1.75,2026-07-06
+CN,Xiaomi,MiMo V2.5,xiaomi/mimo-v2.5,True,1048576,0.105,0.28,2026-07-06
+CN,Moonshot,Kimi K2,moonshotai/kimi-k2,True,131072,0.57,2.3,2026-07-06
+EU,Mistral,Mistral Large,mistralai/mistral-large-2512,False,262144,0.5,1.5,2026-07-06

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+agreement_paper.pdf
+*_pilot.json
+.DS_Store
+.ipynb_checkpoints/

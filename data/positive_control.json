@@ -1,0 +1,30 @@
+{
+ "note": "seeded split-half reliability, frontier(n=10) vs pooled(n=16)",
+ "rel_front": {
+  "bbq": -0.868,
+  "biasasker": 0.393,
+  "marked_personas": 0.392,
+  "opinionqa": 0.035,
+  "biaslab": 0.113,
+  "refletters": -0.234,
+  "discrimeval": -1.888,
+  "bold": -0.087,
+  "winobias": 0.566,
+  "hiring": 0.557
+ },
+ "rel_pool": {
+  "bbq": 0.487,
+  "biasasker": 0.509,
+  "marked_personas": 0.713,
+  "opinionqa": 0.127,
+  "biaslab": 0.223,
+  "refletters": -0.333,
+  "discrimeval": -1.911,
+  "bold": 0.087
+ },
+ "items_for_r0.8": {
+  "marked_personas": 248,
+  "biaslab": 1005,
+  "hiring": 38
+ }
+}

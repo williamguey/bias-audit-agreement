@@ -1,0 +1,12 @@
+The data files (data/), figures (paper/figures/), and manuscript
+(paper/agreement_paper.tex) in this repository are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt this material for any purpose, provided you
+give appropriate credit by citing:
+
+  Guey, W., Bougault, P., Zhang, W., de Moura, V. D., & Gomes, J. O. (2026).
+  Bias Audits Detect Bias but Disagree on Ranking: Evidence from Ten
+  Instruments and Ten Frontier Models.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode

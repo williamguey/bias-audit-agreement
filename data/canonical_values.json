@@ -1,0 +1,382 @@
+{
+ "call_count": 8040,
+ "detection": {
+  "marked_personas": 0.57,
+  "hiring": 0.39,
+  "biaslab": 0.38,
+  "winobias": 0.27,
+  "opinionqa": 0.19,
+  "refletters": 0.14,
+  "bold": 0.06,
+  "discrimeval": 0.04
+ },
+ "direction": {
+  "marked_personas": 0.571,
+  "winobias": 0.274,
+  "opinionqa": 0.193,
+  "biaslab": -0.384,
+  "refletters": -0.035,
+  "discrimeval": -0.002,
+  "bold": -0.035,
+  "hiring": -0.368
+ },
+ "rel_front": {
+  "bbq": -0.868,
+  "biasasker": 0.393,
+  "marked_personas": 0.392,
+  "opinionqa": 0.035,
+  "biaslab": 0.113,
+  "refletters": -0.234,
+  "discrimeval": -1.888,
+  "bold": -0.087,
+  "winobias": 0.566,
+  "hiring": 0.557
+ },
+ "rel_pool": {
+  "bbq": 0.487,
+  "biasasker": 0.509,
+  "marked_personas": 0.713,
+  "opinionqa": 0.127,
+  "biaslab": 0.223,
+  "refletters": -0.333,
+  "discrimeval": -1.911,
+  "bold": 0.087
+ },
+ "model_net": {
+  "GPT-5.2": -0.047,
+  "Claude Sonnet 4": 0.038,
+  "Gemini 3 Flash": 0.103,
+  "Llama 4 Maverick": 0.029,
+  "Qwen3-235B": -0.061,
+  "DeepSeek V3.2": 0.142,
+  "GLM-4.7": 0.023,
+  "MiMo V2.5": 0.013,
+  "Kimi K2": -0.01,
+  "Mistral Large": 0.088
+ },
+ "regional": {
+  "US": 0.03,
+  "CN": 0.02,
+  "diff": 0.01
+ },
+ "tost": {
+  "p_larger": 0.044,
+  "diff_ttest_p": 0.84
+ },
+ "variants": {
+  "A": {
+   "W": 0.069,
+   "tau": -0.052,
+   "null95": 0.233,
+   "null_mean": 0.125,
+   "p": 0.832,
+   "n_models": 9,
+   "n_tools": 8
+  },
+  "B": {
+   "W": 0.211,
+   "tau": 0.079,
+   "null95": 0.233,
+   "null_mean": 0.125,
+   "p": 0.086,
+   "n_models": 9,
+   "n_tools": 8
+  },
+  "C": {
+   "W": 0.109,
+   "tau": -0.047,
+   "null95": 0.306,
+   "null_mean": 0.167,
+   "p": 0.755,
+   "n_models": 9,
+   "n_tools": 6
+  },
+  "D": {
+   "W": 0.107,
+   "tau": 0.008,
+   "null95": 0.187,
+   "null_mean": 0.1,
+   "p": 0.387,
+   "n_models": 9,
+   "n_tools": 10
+  },
+  "E": {
+   "W": 0.051,
+   "tau": -0.088,
+   "null95": 0.266,
+   "null_mean": 0.143,
+   "p": 0.951,
+   "n_models": 9,
+   "n_tools": 7
+  }
+ },
+ "baseline": {
+  "W": 0.069,
+  "tau": -0.052,
+  "null95": 0.233,
+  "null_mean": 0.125,
+  "p": 0.832,
+  "n_models": 9,
+  "n_tools": 8
+ },
+ "biaslab_dropped": {
+  "W": 0.077,
+  "tau": -0.059,
+  "null95": 0.266,
+  "null_mean": 0.143,
+  "p": 0.845,
+  "n_models": 9,
+  "n_tools": 7
+ },
+ "weak_only": {
+  "W": 0.112,
+  "p": 0.677,
+  "mean_tau": -0.066,
+  "n_models": 6,
+  "n_tools": 6
+ },
+ "pooled16": {
+  "W": 0.15
+ },
+ "claude_net": 0.04,
+ "items": {
+  "marked_personas": 248,
+  "biaslab": 1000.0,
+  "hiring": 38
+ },
+ "detection_note": "mean over models of |per-model net|; model-bootstrap seed=42 CI; SAME source as direction so det>=|dir| by construction (fixes item-bootstrap desync)",
+ "figures_verified": {
+  "fig1_detection": "model-level from all10_scores; det>=|dir| holds; all CI exclude 0",
+  "fig2_direction": "net dir + sign-stability match canonical direction",
+  "fig3_ranking_null": "W=0.07 nullmean=0.12 p=0.83 8 tools",
+  "fig4_regional": "per-model nets + US0.03/CN0.02 + TOST0.044, region-grouped",
+  "fig5_positive_control": "MP .39->.71 BiasLab .11->.22 OpinionQA .04->.13 BOLD -.09->.09"
+ },
+ "detection_ci": {
+  "marked_personas": [
+   0.456,
+   0.652
+  ],
+  "refletters": [
+   0.076,
+   0.216
+  ],
+  "hiring": [
+   0.198,
+   0.57
+  ],
+  "biaslab": [
+   0.321,
+   0.442
+  ],
+  "winobias": [
+   0.155,
+   0.424
+  ],
+  "opinionqa": [
+   0.159,
+   0.228
+  ],
+  "discrimeval": [
+   0.016,
+   0.063
+  ],
+  "bold": [
+   0.037,
+   0.086
+  ]
+ },
+ "constructs": {
+  "age": {
+   "disc_tools": [
+    "bbq",
+    "biasasker",
+    "marked_personas",
+    "opinionqa",
+    "biaslab",
+    "discrimeval",
+    "bold",
+    "hiring"
+   ],
+   "saturated_dropped": [],
+   "detection": {
+    "bbq": 0.1,
+    "biasasker": 0.043,
+    "marked_personas": 0.202,
+    "opinionqa": 0.029,
+    "biaslab": 0.136,
+    "discrimeval": 0.144,
+    "bold": 0.072,
+    "hiring": 0.281
+   },
+   "detection_ci": {
+    "bbq": [
+     0.0,
+     0.3
+    ],
+    "biasasker": [
+     0.017,
+     0.075
+    ],
+    "marked_personas": [
+     0.148,
+     0.262
+    ],
+    "opinionqa": [
+     0.005,
+     0.062
+    ],
+    "biaslab": [
+     0.083,
+     0.185
+    ],
+    "discrimeval": [
+     0.056,
+     0.265
+    ],
+    "bold": [
+     0.018,
+     0.156
+    ],
+    "hiring": [
+     0.146,
+     0.453
+    ]
+   },
+   "direction": {
+    "bbq": -0.1,
+    "biasasker": 0.037,
+    "marked_personas": 0.155,
+    "opinionqa": 0.029,
+    "biaslab": -0.123,
+    "discrimeval": -0.135,
+    "bold": -0.047,
+    "hiring": 0.181
+   },
+   "W": 0.318,
+   "W_null_mean": 0.125,
+   "W_null95": 0.253,
+   "W_p": 0.012,
+   "n_models": 7,
+   "robustness": {
+    "drop_hiring_W": 0.348,
+    "drop_hiring_p": 0.005,
+    "drop_near_saturated_W": 0.326,
+    "drop_near_saturated_p": "0.054",
+    "boot_W_median": 0.307,
+    "boot_W_ci": [
+     0.067,
+     0.503
+    ],
+    "frac_below_null95": 0.31,
+    "note": "significant but fragile: 7 models only (3 frontier refuse), Hiring dissents (tau -0.53), marginal when near-saturated tools removed"
+   }
+  },
+  "ses": {
+   "disc_tools": [
+    "biasasker",
+    "marked_personas",
+    "biaslab",
+    "discrimeval",
+    "bold",
+    "hiring"
+   ],
+   "saturated_dropped": [
+    "bbq",
+    "opinionqa"
+   ],
+   "detection": {
+    "biasasker": 0.011,
+    "marked_personas": 0.303,
+    "biaslab": 0.897,
+    "discrimeval": 0.206,
+    "bold": 0.046,
+    "hiring": 0.955
+   },
+   "detection_ci": {
+    "biasasker": [
+     0.0,
+     0.029
+    ],
+    "marked_personas": [
+     0.233,
+     0.374
+    ],
+    "biaslab": [
+     0.745,
+     1.041
+    ],
+    "discrimeval": [
+     0.116,
+     0.321
+    ],
+    "bold": [
+     0.023,
+     0.071
+    ],
+    "hiring": [
+     0.864,
+     1.0
+    ]
+   },
+   "direction": {
+    "biasasker": 0.011,
+    "marked_personas": 0.303,
+    "biaslab": -0.897,
+    "discrimeval": -0.206,
+    "bold": 0.037,
+    "hiring": -0.955
+   },
+   "W": 0.1,
+   "W_null_mean": 0.167,
+   "W_null95": 0.294,
+   "W_p": 0.824,
+   "n_models": 10,
+   "note": "clean replication of detection-without-ranking; forced-choice tools (Hiring -0.955, BiasLab -0.897) show strong ANTI-stereotype correction favoring working-class"
+  },
+  "gender_reference": {
+   "W": 0.07,
+   "W_p": 0.83,
+   "note": "from main gender analysis for comparison"
+  }
+ },
+ "construct_rendered": {
+  "ses_W": "0.10",
+  "ses_p": "0.82",
+  "ses_null95": "0.29",
+  "ses_hiring_picks": "273",
+  "ses_hiring_total": "278",
+  "ses_hiring_net": "-0.96",
+  "ses_biaslab_net": "-0.90",
+  "ses_mp_net": "+0.30",
+  "age_W": "0.32",
+  "age_p": "0.012",
+  "age_boot_lo": "0.07",
+  "age_boot_hi": "0.50",
+  "age_frac_null": "31",
+  "age_drop_sat_p": "0.054",
+  "age_n_models": "seven",
+  "age_drop_saturated_p": "0.054",
+  "age_drop_flat_W": "0.26",
+  "age_drop_flat_p": "0.14",
+  "age_deleted_models": "GPT-5.2, Claude Sonnet 4, Gemini 3 Flash",
+  "age_usable_pct": "95.8",
+  "ses_usable_pct": "96.7",
+  "ses_disc_tools": "6",
+  "age_deleted_mechanism": "GPT-5.2 and Claude decline age Hiring; Gemini unscorable on OpinionQA",
+  "claude_age_refusal": "0.83",
+  "claude_ses_refusal": "0.08",
+  "ses_saturated": "BBQ and OpinionQA",
+  "biasasker_ses_sd": "0.03"
+ },
+ "positive_control_rendered": {
+  "same_six_frontier_W": "0.16",
+  "same_six_frontier_p": "0.51"
+ },
+ "regional_rendered": {
+  "us_cn_diff": "0.01",
+  "diff_ci": "[-0.07, 0.08]",
+  "tost_p_010": "0.044",
+  "tost_p_008": "0.084"
+ }
+}
