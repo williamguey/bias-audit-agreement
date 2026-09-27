@@ -1,0 +1,2124 @@
+{
+  "panels": {
+    "gender_frontier": {
+      "panel": "gender_frontier",
+      "validity": [
+        {
+          "tool": "bbq",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biasasker",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.35
+        },
+        {
+          "tool": "marked_personas",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.875
+        },
+        {
+          "tool": "opinionqa",
+          "eligible": false,
+          "reason": "custom poll has no validated common bias key or human reference",
+          "n_units": 16,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "biaslab",
+          "eligible": true,
+          "reason": "",
+          "n_units": 16,
+          "min_coverage": 0.1875
+        },
+        {
+          "tool": "refletters",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "discrimeval",
+          "eligible": true,
+          "reason": "",
+          "n_units": 8,
+          "min_coverage": 0.125
+        },
+        {
+          "tool": "bold",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.9166666666666666
+        },
+        {
+          "tool": "winobias",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "hiring",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.0
+        }
+      ],
+      "ranking": {
+        "absolute_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.2302721088435374,
+          "permutation_p": 0.02664866756662167,
+          "null_mean": 0.11049753401360544,
+          "null_q95": 0.20703514739229018,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.06500323283435237,
+            0.31571860632205
+          ],
+          "bootstrap_valid": 1859,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "signed_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.11382389510568554,
+          "permutation_p": 0.42342882855857206,
+          "null_mean": 0.11119707810557251,
+          "null_q95": 0.20820617158358765,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.04531515005308525,
+            0.22186899485054323
+          ],
+          "bootstrap_valid": 1859,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "coverage80_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GPT-5.2",
+            "Kimi K2",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 6,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GLM-4.7",
+            "Gemini 3 Flash",
+            "Llama 4 Maverick"
+          ],
+          "W": 0.3257229832572298,
+          "permutation_p": 0.007749612519374031,
+          "null_mean": 0.11107583713850835,
+          "null_q95": 0.2378234398782344,
+          "n_permutations": 20000
+        },
+        "without_biaslab_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 8,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.18938953488372093,
+          "permutation_p": 0.13869306534673267,
+          "null_mean": 0.12547468023255814,
+          "null_q95": 0.23488372093023255,
+          "n_permutations": 20000
+        },
+        "shared_tools_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "Claude Sonnet 4",
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 10,
+          "n_tools": 7,
+          "excluded_models": [],
+          "W": 0.317162600479481,
+          "permutation_p": 0.010099495025248737,
+          "null_mean": 0.14338877450289098,
+          "null_q95": 0.2593428289380905,
+          "n_permutations": 20000
+        },
+        "shared_tools_without_biaslab_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "Claude Sonnet 4",
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 10,
+          "n_tools": 6,
+          "excluded_models": [],
+          "W": 0.29009433962264153,
+          "permutation_p": 0.06014699265036748,
+          "null_mean": 0.1670851808176101,
+          "null_q95": 0.29913522012578614,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "gender_additional": {
+      "panel": "gender_additional",
+      "validity": [
+        {
+          "tool": "bbq",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biasasker",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "marked_personas",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.825
+        },
+        {
+          "tool": "opinionqa",
+          "eligible": false,
+          "reason": "custom poll has no validated common bias key or human reference",
+          "n_units": 16,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biaslab",
+          "eligible": true,
+          "reason": "",
+          "n_units": 16,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "refletters",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "discrimeval",
+          "eligible": true,
+          "reason": "",
+          "n_units": 8,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "bold",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.6666666666666666
+        }
+      ],
+      "ranking": {
+        "absolute_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.15384615384615385,
+          "permutation_p": 0.38118094095295235,
+          "null_mean": 0.14187252747252746,
+          "null_q95": 0.4010989010989011,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.018633540372670808,
+            0.5639097744360902
+          ],
+          "bootstrap_valid": 2000,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "signed_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.15384615384615385,
+          "permutation_p": 0.3797310134493275,
+          "null_mean": 0.14278626373626374,
+          "null_q95": 0.4175824175824176,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.005714285714285714,
+            0.2857142857142857
+          ],
+          "bootstrap_valid": 2000,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "coverage80_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval"
+          ],
+          "constant_tools": [
+            "bold"
+          ],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 6,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.2727272727272727,
+          "permutation_p": 0.23733813309334534,
+          "null_mean": 0.1661784090909091,
+          "null_q95": 0.4772727272727273,
+          "n_permutations": 20000
+        },
+        "without_biaslab_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 6,
+          "n_tools": 6,
+          "excluded_models": [],
+          "W": 0.15651438240270726,
+          "permutation_p": 0.472126393680316,
+          "null_mean": 0.16560841793570222,
+          "null_q95": 0.3494077834179357,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "gender_pooled": {
+      "panel": "gender_pooled",
+      "validity": [
+        {
+          "tool": "bbq",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biasasker",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "marked_personas",
+          "eligible": true,
+          "reason": "",
+          "n_units": 40,
+          "min_coverage": 0.825
+        },
+        {
+          "tool": "opinionqa",
+          "eligible": false,
+          "reason": "custom poll has no validated common bias key or human reference",
+          "n_units": 16,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "biaslab",
+          "eligible": true,
+          "reason": "",
+          "n_units": 16,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "refletters",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "discrimeval",
+          "eligible": true,
+          "reason": "",
+          "n_units": 8,
+          "min_coverage": 0.125
+        },
+        {
+          "tool": "bold",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.6666666666666666
+        },
+        {
+          "tool": "winobias",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "hiring",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.0
+        }
+      ],
+      "ranking": {
+        "absolute_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.2302721088435374,
+          "permutation_p": 0.027948602569871507,
+          "null_mean": 0.1117092800453515,
+          "null_q95": 0.21077097505668935,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.0691162602749217,
+            0.32689297158404745
+          ],
+          "bootstrap_valid": 1857,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "signed_net": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.11382389510568554,
+          "permutation_p": 0.4223288835558222,
+          "null_mean": 0.11108931276138803,
+          "null_q95": 0.20809313891714706,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.04247071948590781,
+            0.216171564167068
+          ],
+          "bootstrap_valid": 1857,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "coverage80_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GPT-5.2",
+            "Kimi K2",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 6,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GLM-4.7",
+            "Gemini 3 Flash",
+            "Llama 4 Maverick",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.3257229832572298,
+          "permutation_p": 0.008349582520873956,
+          "null_mean": 0.1119652587519026,
+          "null_q95": 0.23936453576864508,
+          "n_permutations": 20000
+        },
+        "without_biaslab_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "refletters",
+            "discrimeval",
+            "bold",
+            "winobias",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 8,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.18938953488372093,
+          "permutation_p": 0.1352432378381081,
+          "null_mean": 0.12452066860465115,
+          "null_q95": 0.2332921511627906,
+          "n_permutations": 20000
+        },
+        "shared_tools_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "biaslab",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "Claude Sonnet 4",
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B",
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 13,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.2824366110080396,
+          "permutation_p": 0.014599270036498175,
+          "null_mean": 0.14329980210265925,
+          "null_q95": 0.24112554112554113,
+          "n_permutations": 20000
+        },
+        "shared_tools_without_biaslab_absolute": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "marked_personas",
+            "refletters",
+            "discrimeval",
+            "bold"
+          ],
+          "constant_tools": [],
+          "models": [
+            "Claude Sonnet 4",
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 16,
+          "n_tools": 6,
+          "excluded_models": [],
+          "W": 0.24092185094630084,
+          "permutation_p": 0.10324483775811209,
+          "null_mean": 0.16723385402517432,
+          "null_q95": 0.2668228742189622,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "age_frontier": {
+      "panel": "age_frontier",
+      "validity": [
+        {
+          "tool": "bbq",
+          "eligible": false,
+          "reason": "one unique prompt; no across-scenario inference",
+          "n_units": 1,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biasasker",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "marked_personas",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.25
+        },
+        {
+          "tool": "opinionqa",
+          "eligible": false,
+          "reason": "custom poll has no validated common bias key or human reference",
+          "n_units": 8,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "biaslab",
+          "eligible": false,
+          "reason": "equality statements are not symmetric demographic reversals",
+          "n_units": 8,
+          "min_coverage": 0.125
+        },
+        {
+          "tool": "discrimeval",
+          "eligible": true,
+          "reason": "",
+          "n_units": 8,
+          "min_coverage": 0.125
+        },
+        {
+          "tool": "bold",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.6666666666666666
+        },
+        {
+          "tool": "hiring",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.0
+        }
+      ],
+      "ranking": {
+        "absolute_net": {
+          "tools": [
+            "biasasker",
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.023880597014925373,
+          "permutation_p": 0.9964501774911254,
+          "null_mean": 0.1989568656716418,
+          "null_q95": 0.39104477611940297,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.04370851082077818,
+            0.3201341935483869
+          ],
+          "bootstrap_valid": 1209,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "signed_net": {
+          "tools": [
+            "biasasker",
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.1701492537313433,
+          "permutation_p": 0.5608219589020549,
+          "null_mean": 0.2003268656716418,
+          "null_q95": 0.3970149253731343,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.04987607843137255,
+            0.34266803418803415
+          ],
+          "bootstrap_valid": 1209,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "coverage80_absolute": {
+          "tools": [
+            "biasasker",
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "Qwen3-235B"
+          ],
+          "n_models": 2,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large"
+          ],
+          "W": null,
+          "permutation_p": null,
+          "null_mean": null,
+          "null_q95": null,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "ses_frontier": {
+      "panel": "ses_frontier",
+      "validity": [
+        {
+          "tool": "bbq",
+          "eligible": false,
+          "reason": "one unique prompt; no across-scenario inference",
+          "n_units": 1,
+          "min_coverage": 1.0
+        },
+        {
+          "tool": "biasasker",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.08333333333333333
+        },
+        {
+          "tool": "marked_personas",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.08333333333333333
+        },
+        {
+          "tool": "opinionqa",
+          "eligible": false,
+          "reason": "custom poll has no validated common bias key or human reference",
+          "n_units": 8,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "biaslab",
+          "eligible": false,
+          "reason": "equality statements are not symmetric demographic reversals",
+          "n_units": 8,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "discrimeval",
+          "eligible": true,
+          "reason": "",
+          "n_units": 8,
+          "min_coverage": 0.0
+        },
+        {
+          "tool": "bold",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.5833333333333334
+        },
+        {
+          "tool": "hiring",
+          "eligible": true,
+          "reason": "",
+          "n_units": 12,
+          "min_coverage": 0.16666666666666666
+        }
+      ],
+      "ranking": {
+        "absolute_net": {
+          "tools": [
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.3,
+          "permutation_p": 0.30763461826908656,
+          "null_mean": 0.2490375,
+          "null_q95": 0.45357142857142857,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.07785714285714286,
+            0.41893394165274384
+          ],
+          "bootstrap_valid": 1499,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "signed_net": {
+          "tools": [
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.1,
+          "permutation_p": 0.9306534673266337,
+          "null_mean": 0.2508789285714286,
+          "null_q95": 0.45357142857142857,
+          "n_permutations": 20000,
+          "bootstrap_W_interval": [
+            0.05219854070660523,
+            0.36489010989010984
+          ],
+          "bootstrap_valid": 1499,
+          "bootstrap_assumption": "independent scenario resampling across probe banks; fixed models/tools"
+        },
+        "coverage80_absolute": {
+          "tools": [
+            "marked_personas",
+            "discrimeval",
+            "bold",
+            "hiring"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 2,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5"
+          ],
+          "W": null,
+          "permutation_p": null,
+          "null_mean": null,
+          "null_q95": null,
+          "n_permutations": 20000
+        }
+      }
+    }
+  },
+  "sensitivities": {
+    "permissive_enum": {
+      "changed_response_scores": 167,
+      "panels": {
+        "gender_frontier": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.20299575229152694,
+          "permutation_p": 0.05719714014299285,
+          "null_mean": 0.11085066510172144,
+          "null_q95": 0.20757880617035546,
+          "n_permutations": 20000
+        },
+        "gender_additional": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "marked_personas",
+            "refletters"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.15384615384615385,
+          "permutation_p": 0.3833308334583271,
+          "null_mean": 0.14245796703296704,
+          "null_q95": 0.4010989010989011,
+          "n_permutations": 20000
+        },
+        "gender_pooled": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.20299575229152694,
+          "permutation_p": 0.06019699015049248,
+          "null_mean": 0.11080934495864074,
+          "null_q95": 0.2104851330203443,
+          "n_permutations": 20000
+        },
+        "age_frontier": {
+          "tools": [
+            "biasasker",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.023880597014925373,
+          "permutation_p": 0.9965001749912504,
+          "null_mean": 0.2000941791044776,
+          "null_q95": 0.39104477611940297,
+          "n_permutations": 20000
+        },
+        "ses_frontier": {
+          "tools": [
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.3,
+          "permutation_p": 0.3105344732763362,
+          "null_mean": 0.24890232142857144,
+          "null_q95": 0.45714285714285713,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "explicit_answer_wrappers": {
+      "changed_response_scores": 321,
+      "panels": {
+        "gender_frontier": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.20524846454494697,
+          "permutation_p": 0.05634718264086796,
+          "null_mean": 0.11131506979341152,
+          "null_q95": 0.20983249581239521,
+          "n_permutations": 20000
+        },
+        "gender_additional": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "marked_personas",
+            "refletters"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 6,
+          "n_tools": 7,
+          "excluded_models": [],
+          "W": 0.19827586206896552,
+          "permutation_p": 0.22843857807109644,
+          "null_mean": 0.1433917487684729,
+          "null_q95": 0.2998768472906404,
+          "n_permutations": 20000
+        },
+        "gender_pooled": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.20524846454494697,
+          "permutation_p": 0.05624718764061797,
+          "null_mean": 0.11066940256839752,
+          "null_q95": 0.20971524288107202,
+          "n_permutations": 20000
+        },
+        "age_frontier": {
+          "tools": [
+            "biasasker",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.023880597014925373,
+          "permutation_p": 0.9960501974901255,
+          "null_mean": 0.19998,
+          "null_q95": 0.3940298507462687,
+          "n_permutations": 20000
+        },
+        "ses_frontier": {
+          "tools": [
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.3,
+          "permutation_p": 0.31018449077546123,
+          "null_mean": 0.2501473214285715,
+          "null_q95": 0.45714285714285713,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "raw_lexicon_counts": {
+      "changed_response_scores": 1586,
+      "panels": {
+        "gender_frontier": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.254033174278573,
+          "permutation_p": 0.013699315034248288,
+          "null_mean": 0.11074709725062487,
+          "null_q95": 0.20597591456487163,
+          "n_permutations": 20000
+        },
+        "gender_additional": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "marked_personas",
+            "refletters"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.06593406593406594,
+          "permutation_p": 0.6967151642417879,
+          "null_mean": 0.14338406593406594,
+          "null_q95": 0.4175824175824176,
+          "n_permutations": 20000
+        },
+        "gender_pooled": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.254033174278573,
+          "permutation_p": 0.01239938003099845,
+          "null_mean": 0.11112367643717337,
+          "null_q95": 0.2089297886843899,
+          "n_permutations": 20000
+        },
+        "age_frontier": {
+          "tools": [
+            "biasasker",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.03582089552238806,
+          "permutation_p": 0.9881505924703765,
+          "null_mean": 0.1999116417910448,
+          "null_q95": 0.3970149253731343,
+          "n_permutations": 20000
+        },
+        "ses_frontier": {
+          "tools": [
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.43214285714285716,
+          "permutation_p": 0.07219639018049097,
+          "null_mean": 0.25012892857142854,
+          "null_q95": 0.45714285714285713,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "pronouns_only": {
+      "changed_response_scores": 2,
+      "panels": {
+        "gender_frontier": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.2302721088435374,
+          "permutation_p": 0.027848607569621518,
+          "null_mean": 0.11092882653061224,
+          "null_q95": 0.20862244897959176,
+          "n_permutations": 20000
+        },
+        "gender_additional": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "marked_personas",
+            "refletters"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.15384615384615385,
+          "permutation_p": 0.3860806959652017,
+          "null_mean": 0.14315824175824177,
+          "null_q95": 0.4010989010989011,
+          "n_permutations": 20000
+        },
+        "gender_pooled": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.2302721088435374,
+          "permutation_p": 0.025948702564871758,
+          "null_mean": 0.11056053854875283,
+          "null_q95": 0.2072562358276644,
+          "n_permutations": 20000
+        },
+        "age_frontier": {
+          "tools": [
+            "biasasker",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.023880597014925373,
+          "permutation_p": 0.9967501624918754,
+          "null_mean": 0.19933880597014925,
+          "null_q95": 0.3940298507462687,
+          "n_permutations": 20000
+        },
+        "ses_frontier": {
+          "tools": [
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.3,
+          "permutation_p": 0.30938453077346134,
+          "null_mean": 0.24946178571428573,
+          "null_q95": 0.45714285714285713,
+          "n_permutations": 20000
+        }
+      }
+    },
+    "exclude_truncation": {
+      "changed_response_scores": 110,
+      "panels": {
+        "gender_frontier": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4"
+          ],
+          "W": 0.2261904761904762,
+          "permutation_p": 0.0311984400779961,
+          "null_mean": 0.11103341269841269,
+          "null_q95": 0.2085034013605442,
+          "n_permutations": 20000
+        },
+        "gender_additional": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "marked_personas",
+            "refletters"
+          ],
+          "constant_tools": [],
+          "models": [
+            "gryphe/mythomax-l2-13b",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "n_models": 3,
+          "n_tools": 7,
+          "excluded_models": [
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct"
+          ],
+          "W": 0.15384615384615385,
+          "permutation_p": 0.37868106594670264,
+          "null_mean": 0.1422203296703297,
+          "null_q95": 0.4010989010989011,
+          "n_permutations": 20000
+        },
+        "gender_pooled": {
+          "tools": [
+            "bbq",
+            "biasasker",
+            "biaslab",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas",
+            "refletters",
+            "winobias"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Gemini 3 Flash",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 9,
+          "n_tools": 9,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "gryphe/mythomax-l2-13b",
+            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
+            "meta-llama/llama-3.2-3b-instruct",
+            "openai/gpt-3.5-turbo",
+            "qwen/qwen-2.5-7b-instruct"
+          ],
+          "W": 0.2261904761904762,
+          "permutation_p": 0.0303984800759962,
+          "null_mean": 0.11077574829931973,
+          "null_q95": 0.20770975056689342,
+          "n_permutations": 20000
+        },
+        "age_frontier": {
+          "tools": [
+            "biasasker",
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 7,
+          "n_tools": 5,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "GPT-5.2",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.023880597014925373,
+          "permutation_p": 0.9962501874906254,
+          "null_mean": 0.19938791044776122,
+          "null_q95": 0.3940298507462687,
+          "n_permutations": 20000
+        },
+        "ses_frontier": {
+          "tools": [
+            "bold",
+            "discrimeval",
+            "hiring",
+            "marked_personas"
+          ],
+          "constant_tools": [
+            "biasasker"
+          ],
+          "models": [
+            "DeepSeek V3.2",
+            "GLM-4.7",
+            "GPT-5.2",
+            "Kimi K2",
+            "Llama 4 Maverick",
+            "MiMo V2.5",
+            "Mistral Large",
+            "Qwen3-235B"
+          ],
+          "n_models": 8,
+          "n_tools": 4,
+          "excluded_models": [
+            "Claude Sonnet 4",
+            "Gemini 3 Flash"
+          ],
+          "W": 0.225,
+          "permutation_p": 0.5496725163741812,
+          "null_mean": 0.2493094642857143,
+          "null_q95": 0.45714285714285713,
+          "n_permutations": 20000
+        }
+      }
+    }
+  },
+  "simulations": {
+    "pair_structure": {
+      "n_models": 10,
+      "n_pairs": 24,
+      "item": {
+        "n_blocks": 48,
+        "valid_splits": 4000,
+        "total_splits": 4000,
+        "mean_r": -0.523,
+        "median_r": -0.9999999999999999,
+        "partition_q025": -0.9999999999999999,
+        "partition_q975": 0.9999999999999999,
+        "sb_positive_only": null
+      },
+      "scenario": {
+        "n_blocks": 24,
+        "valid_splits": 4000,
+        "total_splits": 4000,
+        "mean_r": 0.9999999999999999,
+        "median_r": 0.9999999999999999,
+        "partition_q025": 0.9999999999999999,
+        "partition_q975": 0.9999999999999999,
+        "sb_positive_only": 0.9999999999999999
+      }
+    },
+    "absolute_noise": {
+      "true_net": 0,
+      "experiments": 1000,
+      "models_per_experiment": 10,
+      "mean_absolute_estimate": 0.17800563143492468,
+      "fraction_absolute_bootstrap_ci_above_zero": 1.0
+    },
+    "note": "Synthetic diagnostics; not empirical model responses or bias prevalence estimates."
+  },
+  "historical_ranking_recomputed": {
+    "tools": [
+      "marked_personas",
+      "biaslab",
+      "opinionqa",
+      "refletters",
+      "discrimeval",
+      "bold",
+      "winobias",
+      "hiring"
+    ],
+    "constant_tools": [],
+    "models": [
+      "DeepSeek V3.2",
+      "GLM-4.7",
+      "GPT-5.2",
+      "Gemini 3 Flash",
+      "Kimi K2",
+      "Llama 4 Maverick",
+      "MiMo V2.5",
+      "Mistral Large",
+      "Qwen3-235B"
+    ],
+    "n_models": 9,
+    "n_tools": 8,
+    "excluded_models": [
+      "Claude Sonnet 4"
+    ],
+    "W": 0.0695754716981132,
+    "permutation_p": 0.8349582520873956,
+    "null_mean": 0.12539160115303982,
+    "null_q95": 0.23453878406708595,
+    "n_permutations": 20000
+  },
+  "total_raw_records": 19500,
+  "raw_counts": {
+    "age_raw.json": 3720,
+    "gender_added_raw.json": 3000,
+    "gender_core_raw.json": 5040,
+    "poscontrol_raw.json": 4020,
+    "ses_raw.json": 3720
+  },
+  "inference_note": "All new analyses are retrospective/exploratory. No new responses or human labels.",
+  "bootstrap_note": "Fixed model panel; scenario sampling uncertainty. Partition quantiles are not confidence intervals.",
+  "provenance": {
+    "seed": 20260927,
+    "bootstrap": 2000,
+    "splits": 2000,
+    "permutations": 20000,
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "base_commit": "e77f9cae9fac90093cca6ce09efb08800c5de6c1",
+    "input_sha256": {
+      "data/raw/age_raw.json": "6919461d282019ddea220c07b7c0bdaea8deac858cdb977c83a74db10b0833b9",
+      "data/raw/gender_added_raw.json": "d31bb3cd5444a6345b3937b1dffe457a73d50cc17af5fcd90d24dc0c6d3c95b4",
+      "data/raw/gender_core_raw.json": "ec76338d57d811776d89c9c09c9edb1d53f42b06f66f2761a7f242579211a0aa",
+      "data/raw/poscontrol_raw.json": "f98efe52ec18d1ffec5567961a22924f14cc272eb8352a52aac2a0f0cc0f919a",
+      "data/raw/ses_raw.json": "c134dcbb0439ca6edc4648b61bcb3bcb8a5bebf09fd32194342ac9653dc06f88",
+      "data/age_items.json": "e2a989a53623e99f1f67fbc25193750cadfa138a2b0ed33ce6273a95e4ef3d6f",
+      "data/full_items.json": "e2febfa474a3b271e2b50646d4e8c06cdcec35e5c6cf3160ee96487b2a339b8b",
+      "data/new_items.json": "20b1f98d7515a483d0d4e9f3ee1d5ee89d8949f14d34eaf3cf5c92b1b7b89420",
+      "data/ses_items.json": "db96cbb134fcb48464fbffec70d0eeadabf58243f6843341521156588d0f6b7d",
+      "data/run_panel.csv": "92b5ecc402f70b478506306a60bb333121ddab43ebc1a49d4cafb3ecc464b811"
+    },
+    "code_sha256": {
+      "code/measurement.py": "08fe616dcd020650af16ca6d8e8b204879395016afcc2800897c316ccddc82c9",
+      "code/reanalyze.py": "188b6158d13c523a6c96faa92370468a0dcf382073d0f88b51ee00efcd58dc2e",
+      "code/analyze.py": "414356aa1aa8d91fb930bf19796297ff6b4be87910e486a94bcca4f69f6c50c6"
+    }
+  }
+}

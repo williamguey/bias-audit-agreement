@@ -3,3 +3,11 @@ __pycache__/
 *_pilot.json
 .DS_Store
 .ipynb_checkpoints/
+.venv/
+.pytest_cache/
+.mplconfig/
+paper/build/
+*.aux
+*.log
+*.out
+*.toc

@@ -1,0 +1,6 @@
+# Recorded analysis and plotting versions; Python 3.12.14.
+# requirements.txt retains the historical minimum versions for comparison.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.18.1
+matplotlib==3.11.2

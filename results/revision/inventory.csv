@@ -1,0 +1,35 @@
+construct,population,tool,attempted_records,expected_records,absent_records,model_count,item_ids,unique_prompts,independent_units,valid_scores,api_errors,empty_outputs,unparseable,truncated_outputs,inferential_eligible,exclusion_reason
+age,frontier,bbq,360,360,0,10,12,1,1,351,9,0,0,0,False,one unique prompt; no across-scenario inference
+age,frontier,biasasker,360,360,0,10,12,12,12,288,5,5,62,3,True,
+age,frontier,biaslab,480,480,0,10,16,16,8,380,1,18,81,47,False,equality statements are not symmetric demographic reversals
+age,frontier,bold,720,720,0,10,24,24,12,689,5,25,1,27,True,
+age,frontier,discrimeval,480,480,0,10,16,16,8,365,4,7,104,42,True,
+age,frontier,hiring,360,360,0,10,12,12,12,198,3,44,115,59,True,
+age,frontier,marked_personas,720,720,0,10,24,24,12,464,10,16,230,23,True,
+age,frontier,opinionqa,240,240,0,10,8,8,8,211,5,0,24,21,False,custom poll has no validated common bias key or human reference
+gender,additional,bbq,720,720,0,6,40,40,40,703,7,0,10,0,True,
+gender,additional,biasasker,720,720,0,6,40,40,40,618,8,0,94,5,True,
+gender,additional,biaslab,576,576,0,6,32,32,16,287,6,0,283,64,True,
+gender,additional,bold,276,432,156,6,16,16,8,275,1,0,0,0,True,
+gender,additional,discrimeval,288,288,0,6,16,16,8,285,3,0,0,0,True,
+gender,additional,marked_personas,720,720,0,6,40,40,40,651,4,0,65,0,True,
+gender,additional,opinionqa,288,288,0,6,16,16,16,288,0,0,0,0,False,custom poll has no validated common bias key or human reference
+gender,additional,refletters,432,432,0,6,24,24,12,429,3,0,0,85,True,
+gender,frontier,bbq,1200,1200,0,10,40,40,40,1184,16,0,0,0,True,
+gender,frontier,biasasker,1200,1200,0,10,40,40,40,1098,13,0,89,0,True,
+gender,frontier,biaslab,960,960,0,10,32,32,16,839,9,19,93,39,True,
+gender,frontier,bold,720,720,0,10,24,24,12,699,5,16,0,21,True,
+gender,frontier,discrimeval,480,480,0,10,16,16,8,377,9,10,84,27,True,
+gender,frontier,hiring,360,360,0,10,12,12,12,275,1,17,67,20,True,
+gender,frontier,marked_personas,1200,1200,0,10,40,40,40,1153,15,4,28,5,True,
+gender,frontier,opinionqa,480,480,0,10,16,16,16,415,9,7,49,43,False,custom poll has no validated common bias key or human reference
+gender,frontier,refletters,720,720,0,10,24,24,12,706,6,8,0,16,True,
+gender,frontier,winobias,720,720,0,10,24,24,12,643,7,21,49,61,True,
+ses,frontier,bbq,360,360,0,10,12,1,1,356,4,0,0,0,False,one unique prompt; no across-scenario inference
+ses,frontier,biasasker,360,360,0,10,12,12,12,283,4,0,73,3,True,
+ses,frontier,biaslab,480,480,0,10,16,16,8,365,8,12,95,49,False,equality statements are not symmetric demographic reversals
+ses,frontier,bold,720,720,0,10,24,24,12,683,3,34,0,39,True,
+ses,frontier,discrimeval,480,480,0,10,16,16,8,336,4,7,133,45,True,
+ses,frontier,hiring,360,360,0,10,12,12,12,277,1,17,65,18,True,
+ses,frontier,marked_personas,720,720,0,10,24,24,12,403,8,17,292,22,True,
+ses,frontier,opinionqa,240,240,0,10,8,8,8,213,4,0,23,15,False,custom poll has no validated common bias key or human reference

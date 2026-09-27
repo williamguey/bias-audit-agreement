@@ -1,0 +1,309 @@
+construct,population,tool,model,ambiguous_gender_proxy,api_error,empty,no_lexicon_matches,no_words,non_enum_or_ambiguous,valid
+age,frontier,bbq,Claude Sonnet 4,0,1,0,0,0,0,35
+age,frontier,bbq,DeepSeek V3.2,0,1,0,0,0,0,35
+age,frontier,bbq,GLM-4.7,0,0,0,0,0,0,36
+age,frontier,bbq,GPT-5.2,0,0,0,0,0,0,36
+age,frontier,bbq,Gemini 3 Flash,0,2,0,0,0,0,34
+age,frontier,bbq,Kimi K2,0,1,0,0,0,0,35
+age,frontier,bbq,Llama 4 Maverick,0,1,0,0,0,0,35
+age,frontier,bbq,MiMo V2.5,0,1,0,0,0,0,35
+age,frontier,bbq,Mistral Large,0,1,0,0,0,0,35
+age,frontier,bbq,Qwen3-235B,0,1,0,0,0,0,35
+age,frontier,biasasker,Claude Sonnet 4,0,1,0,0,0,11,24
+age,frontier,biasasker,DeepSeek V3.2,0,0,0,0,0,0,36
+age,frontier,biasasker,GLM-4.7,0,0,1,0,0,0,35
+age,frontier,biasasker,GPT-5.2,0,1,0,0,0,12,23
+age,frontier,biasasker,Gemini 3 Flash,0,0,0,0,0,36,0
+age,frontier,biasasker,Kimi K2,0,0,2,0,0,0,34
+age,frontier,biasasker,Llama 4 Maverick,0,1,0,0,0,0,35
+age,frontier,biasasker,MiMo V2.5,0,0,2,0,0,3,31
+age,frontier,biasasker,Mistral Large,0,1,0,0,0,0,35
+age,frontier,biasasker,Qwen3-235B,0,1,0,0,0,0,35
+age,frontier,biaslab,Claude Sonnet 4,0,0,0,0,0,37,11
+age,frontier,biaslab,DeepSeek V3.2,0,1,0,0,0,0,47
+age,frontier,biaslab,GLM-4.7,0,0,18,0,0,0,30
+age,frontier,biaslab,GPT-5.2,0,0,0,0,0,0,48
+age,frontier,biaslab,Gemini 3 Flash,0,0,0,0,0,24,24
+age,frontier,biaslab,Kimi K2,0,0,0,0,0,1,47
+age,frontier,biaslab,Llama 4 Maverick,0,0,0,0,0,14,34
+age,frontier,biaslab,MiMo V2.5,0,0,0,0,0,5,43
+age,frontier,biaslab,Mistral Large,0,0,0,0,0,0,48
+age,frontier,biaslab,Qwen3-235B,0,0,0,0,0,0,48
+age,frontier,bold,Claude Sonnet 4,0,1,0,0,0,0,71
+age,frontier,bold,DeepSeek V3.2,0,1,0,0,0,0,71
+age,frontier,bold,GLM-4.7,0,1,25,0,0,0,46
+age,frontier,bold,GPT-5.2,0,0,0,0,0,0,72
+age,frontier,bold,Gemini 3 Flash,0,0,0,0,0,0,72
+age,frontier,bold,Kimi K2,0,0,0,0,0,0,72
+age,frontier,bold,Llama 4 Maverick,0,0,0,0,0,0,72
+age,frontier,bold,MiMo V2.5,0,1,0,0,1,0,70
+age,frontier,bold,Mistral Large,0,1,0,0,0,0,71
+age,frontier,bold,Qwen3-235B,0,0,0,0,0,0,72
+age,frontier,discrimeval,Claude Sonnet 4,0,0,0,0,0,36,12
+age,frontier,discrimeval,DeepSeek V3.2,0,0,0,0,0,0,48
+age,frontier,discrimeval,GLM-4.7,0,0,6,0,0,0,42
+age,frontier,discrimeval,GPT-5.2,0,1,0,0,0,5,42
+age,frontier,discrimeval,Gemini 3 Flash,0,1,0,0,0,32,15
+age,frontier,discrimeval,Kimi K2,0,0,0,0,0,0,48
+age,frontier,discrimeval,Llama 4 Maverick,0,0,0,0,0,29,19
+age,frontier,discrimeval,MiMo V2.5,0,1,1,0,0,2,44
+age,frontier,discrimeval,Mistral Large,0,1,0,0,0,0,47
+age,frontier,discrimeval,Qwen3-235B,0,0,0,0,0,0,48
+age,frontier,hiring,Claude Sonnet 4,0,0,0,0,0,36,0
+age,frontier,hiring,DeepSeek V3.2,0,0,0,0,0,0,36
+age,frontier,hiring,GLM-4.7,0,0,23,0,0,0,13
+age,frontier,hiring,GPT-5.2,0,1,0,0,0,35,0
+age,frontier,hiring,Gemini 3 Flash,0,1,0,0,0,33,2
+age,frontier,hiring,Kimi K2,0,0,1,0,0,0,35
+age,frontier,hiring,Llama 4 Maverick,0,0,0,0,0,1,35
+age,frontier,hiring,MiMo V2.5,0,0,20,0,0,10,6
+age,frontier,hiring,Mistral Large,0,0,0,0,0,0,36
+age,frontier,hiring,Qwen3-235B,0,1,0,0,0,0,35
+age,frontier,marked_personas,Claude Sonnet 4,0,0,0,46,0,0,26
+age,frontier,marked_personas,DeepSeek V3.2,0,1,0,11,0,0,60
+age,frontier,marked_personas,GLM-4.7,0,0,14,30,0,0,28
+age,frontier,marked_personas,GPT-5.2,0,0,0,22,0,0,50
+age,frontier,marked_personas,Gemini 3 Flash,0,4,0,21,0,0,47
+age,frontier,marked_personas,Kimi K2,0,2,2,40,0,0,28
+age,frontier,marked_personas,Llama 4 Maverick,0,1,0,14,0,0,57
+age,frontier,marked_personas,MiMo V2.5,0,0,0,19,0,0,53
+age,frontier,marked_personas,Mistral Large,0,1,0,10,0,0,61
+age,frontier,marked_personas,Qwen3-235B,0,1,0,17,0,0,54
+age,frontier,opinionqa,Claude Sonnet 4,0,1,0,0,0,0,23
+age,frontier,opinionqa,DeepSeek V3.2,0,0,0,0,0,0,24
+age,frontier,opinionqa,GLM-4.7,0,1,0,0,0,0,23
+age,frontier,opinionqa,GPT-5.2,0,0,0,0,0,0,24
+age,frontier,opinionqa,Gemini 3 Flash,0,0,0,0,0,24,0
+age,frontier,opinionqa,Kimi K2,0,0,0,0,0,0,24
+age,frontier,opinionqa,Llama 4 Maverick,0,0,0,0,0,0,24
+age,frontier,opinionqa,MiMo V2.5,0,0,0,0,0,0,24
+age,frontier,opinionqa,Mistral Large,0,1,0,0,0,0,23
+age,frontier,opinionqa,Qwen3-235B,0,2,0,0,0,0,22
+gender,additional,bbq,gryphe/mythomax-l2-13b,0,0,0,0,0,0,120
+gender,additional,bbq,meta-llama/llama-3-8b-instruct,0,1,0,0,0,0,119
+gender,additional,bbq,meta-llama/llama-3.1-8b-instruct,0,1,0,0,0,0,119
+gender,additional,bbq,meta-llama/llama-3.2-3b-instruct,0,2,0,0,0,10,108
+gender,additional,bbq,openai/gpt-3.5-turbo,0,2,0,0,0,0,118
+gender,additional,bbq,qwen/qwen-2.5-7b-instruct,0,1,0,0,0,0,119
+gender,additional,biasasker,gryphe/mythomax-l2-13b,0,0,0,0,0,0,120
+gender,additional,biasasker,meta-llama/llama-3-8b-instruct,0,4,0,0,0,0,116
+gender,additional,biasasker,meta-llama/llama-3.1-8b-instruct,0,1,0,0,0,0,119
+gender,additional,biasasker,meta-llama/llama-3.2-3b-instruct,0,2,0,0,0,94,24
+gender,additional,biasasker,openai/gpt-3.5-turbo,0,1,0,0,0,0,119
+gender,additional,biasasker,qwen/qwen-2.5-7b-instruct,0,0,0,0,0,0,120
+gender,additional,biaslab,gryphe/mythomax-l2-13b,0,1,0,0,0,0,95
+gender,additional,biaslab,meta-llama/llama-3-8b-instruct,0,2,0,0,0,94,0
+gender,additional,biaslab,meta-llama/llama-3.1-8b-instruct,0,0,0,0,0,94,2
+gender,additional,biaslab,meta-llama/llama-3.2-3b-instruct,0,1,0,0,0,95,0
+gender,additional,biaslab,openai/gpt-3.5-turbo,0,2,0,0,0,0,94
+gender,additional,biaslab,qwen/qwen-2.5-7b-instruct,0,0,0,0,0,0,96
+gender,additional,bold,gryphe/mythomax-l2-13b,0,0,0,0,0,0,46
+gender,additional,bold,meta-llama/llama-3-8b-instruct,0,0,0,0,0,0,46
+gender,additional,bold,meta-llama/llama-3.1-8b-instruct,0,0,0,0,0,0,46
+gender,additional,bold,meta-llama/llama-3.2-3b-instruct,0,1,0,0,0,0,45
+gender,additional,bold,openai/gpt-3.5-turbo,0,0,0,0,0,0,46
+gender,additional,bold,qwen/qwen-2.5-7b-instruct,0,0,0,0,0,0,46
+gender,additional,discrimeval,gryphe/mythomax-l2-13b,0,1,0,0,0,0,47
+gender,additional,discrimeval,meta-llama/llama-3-8b-instruct,0,0,0,0,0,0,48
+gender,additional,discrimeval,meta-llama/llama-3.1-8b-instruct,0,0,0,0,0,0,48
+gender,additional,discrimeval,meta-llama/llama-3.2-3b-instruct,0,1,0,0,0,0,47
+gender,additional,discrimeval,openai/gpt-3.5-turbo,0,0,0,0,0,0,48
+gender,additional,discrimeval,qwen/qwen-2.5-7b-instruct,0,1,0,0,0,0,47
+gender,additional,marked_personas,gryphe/mythomax-l2-13b,7,1,0,0,0,0,112
+gender,additional,marked_personas,meta-llama/llama-3-8b-instruct,21,0,0,0,0,0,99
+gender,additional,marked_personas,meta-llama/llama-3.1-8b-instruct,24,0,0,0,0,0,96
+gender,additional,marked_personas,meta-llama/llama-3.2-3b-instruct,6,2,0,0,0,0,112
+gender,additional,marked_personas,openai/gpt-3.5-turbo,1,1,0,0,0,0,118
+gender,additional,marked_personas,qwen/qwen-2.5-7b-instruct,6,0,0,0,0,0,114
+gender,additional,opinionqa,gryphe/mythomax-l2-13b,0,0,0,0,0,0,48
+gender,additional,opinionqa,meta-llama/llama-3-8b-instruct,0,0,0,0,0,0,48
+gender,additional,opinionqa,meta-llama/llama-3.1-8b-instruct,0,0,0,0,0,0,48
+gender,additional,opinionqa,meta-llama/llama-3.2-3b-instruct,0,0,0,0,0,0,48
+gender,additional,opinionqa,openai/gpt-3.5-turbo,0,0,0,0,0,0,48
+gender,additional,opinionqa,qwen/qwen-2.5-7b-instruct,0,0,0,0,0,0,48
+gender,additional,refletters,gryphe/mythomax-l2-13b,0,1,0,0,0,0,71
+gender,additional,refletters,meta-llama/llama-3-8b-instruct,0,0,0,0,0,0,72
+gender,additional,refletters,meta-llama/llama-3.1-8b-instruct,0,0,0,0,0,0,72
+gender,additional,refletters,meta-llama/llama-3.2-3b-instruct,0,0,0,0,0,0,72
+gender,additional,refletters,openai/gpt-3.5-turbo,0,1,0,0,0,0,71
+gender,additional,refletters,qwen/qwen-2.5-7b-instruct,0,1,0,0,0,0,71
+gender,frontier,bbq,Claude Sonnet 4,0,1,0,0,0,0,119
+gender,frontier,bbq,DeepSeek V3.2,0,1,0,0,0,0,119
+gender,frontier,bbq,GLM-4.7,0,2,0,0,0,0,118
+gender,frontier,bbq,GPT-5.2,0,0,0,0,0,0,120
+gender,frontier,bbq,Gemini 3 Flash,0,2,0,0,0,0,118
+gender,frontier,bbq,Kimi K2,0,2,0,0,0,0,118
+gender,frontier,bbq,Llama 4 Maverick,0,0,0,0,0,0,120
+gender,frontier,bbq,MiMo V2.5,0,3,0,0,0,0,117
+gender,frontier,bbq,Mistral Large,0,3,0,0,0,0,117
+gender,frontier,bbq,Qwen3-235B,0,2,0,0,0,0,118
+gender,frontier,biasasker,Claude Sonnet 4,0,0,0,0,0,0,120
+gender,frontier,biasasker,DeepSeek V3.2,0,2,0,0,0,0,118
+gender,frontier,biasasker,GLM-4.7,0,1,0,0,0,0,119
+gender,frontier,biasasker,GPT-5.2,0,0,0,0,0,0,120
+gender,frontier,biasasker,Gemini 3 Flash,0,0,0,0,0,87,33
+gender,frontier,biasasker,Kimi K2,0,1,0,0,0,0,119
+gender,frontier,biasasker,Llama 4 Maverick,0,1,0,0,0,0,119
+gender,frontier,biasasker,MiMo V2.5,0,4,0,0,0,2,114
+gender,frontier,biasasker,Mistral Large,0,4,0,0,0,0,116
+gender,frontier,biasasker,Qwen3-235B,0,0,0,0,0,0,120
+gender,frontier,biaslab,Claude Sonnet 4,0,2,0,0,0,6,88
+gender,frontier,biaslab,DeepSeek V3.2,0,1,0,0,0,0,95
+gender,frontier,biaslab,GLM-4.7,0,0,19,0,0,0,77
+gender,frontier,biaslab,GPT-5.2,0,0,0,0,0,0,96
+gender,frontier,biaslab,Gemini 3 Flash,0,2,0,0,0,56,38
+gender,frontier,biaslab,Kimi K2,0,1,0,0,0,0,95
+gender,frontier,biaslab,Llama 4 Maverick,0,1,0,0,0,30,65
+gender,frontier,biaslab,MiMo V2.5,0,0,0,0,0,1,95
+gender,frontier,biaslab,Mistral Large,0,1,0,0,0,0,95
+gender,frontier,biaslab,Qwen3-235B,0,1,0,0,0,0,95
+gender,frontier,bold,Claude Sonnet 4,0,0,0,0,0,0,72
+gender,frontier,bold,DeepSeek V3.2,0,0,0,0,0,0,72
+gender,frontier,bold,GLM-4.7,0,2,15,0,0,0,55
+gender,frontier,bold,GPT-5.2,0,0,0,0,0,0,72
+gender,frontier,bold,Gemini 3 Flash,0,2,0,0,0,0,70
+gender,frontier,bold,Kimi K2,0,0,1,0,0,0,71
+gender,frontier,bold,Llama 4 Maverick,0,1,0,0,0,0,71
+gender,frontier,bold,MiMo V2.5,0,0,0,0,0,0,72
+gender,frontier,bold,Mistral Large,0,0,0,0,0,0,72
+gender,frontier,bold,Qwen3-235B,0,0,0,0,0,0,72
+gender,frontier,discrimeval,Claude Sonnet 4,0,2,0,0,0,37,9
+gender,frontier,discrimeval,DeepSeek V3.2,0,0,0,0,0,0,48
+gender,frontier,discrimeval,GLM-4.7,0,1,10,0,0,0,37
+gender,frontier,discrimeval,GPT-5.2,0,1,0,0,0,17,30
+gender,frontier,discrimeval,Gemini 3 Flash,0,1,0,0,0,19,28
+gender,frontier,discrimeval,Kimi K2,0,1,0,0,0,0,47
+gender,frontier,discrimeval,Llama 4 Maverick,0,1,0,0,0,11,36
+gender,frontier,discrimeval,MiMo V2.5,0,1,0,0,0,0,47
+gender,frontier,discrimeval,Mistral Large,0,0,0,0,0,0,48
+gender,frontier,discrimeval,Qwen3-235B,0,1,0,0,0,0,47
+gender,frontier,hiring,Claude Sonnet 4,0,0,0,0,0,36,0
+gender,frontier,hiring,DeepSeek V3.2,0,0,0,0,0,0,36
+gender,frontier,hiring,GLM-4.7,0,0,14,0,0,0,22
+gender,frontier,hiring,GPT-5.2,0,0,0,0,0,15,21
+gender,frontier,hiring,Gemini 3 Flash,0,0,0,0,0,9,27
+gender,frontier,hiring,Kimi K2,0,1,0,0,0,0,35
+gender,frontier,hiring,Llama 4 Maverick,0,0,0,0,0,5,31
+gender,frontier,hiring,MiMo V2.5,0,0,3,0,0,2,31
+gender,frontier,hiring,Mistral Large,0,0,0,0,0,0,36
+gender,frontier,hiring,Qwen3-235B,0,0,0,0,0,0,36
+gender,frontier,marked_personas,Claude Sonnet 4,0,1,0,0,0,0,119
+gender,frontier,marked_personas,DeepSeek V3.2,3,2,0,0,0,0,115
+gender,frontier,marked_personas,GLM-4.7,1,3,4,0,0,0,112
+gender,frontier,marked_personas,GPT-5.2,1,2,0,0,0,0,117
+gender,frontier,marked_personas,Gemini 3 Flash,0,1,0,0,0,0,119
+gender,frontier,marked_personas,Kimi K2,0,1,0,0,0,0,119
+gender,frontier,marked_personas,Llama 4 Maverick,0,1,0,0,0,0,119
+gender,frontier,marked_personas,MiMo V2.5,4,1,0,0,0,0,115
+gender,frontier,marked_personas,Mistral Large,0,1,0,0,0,0,119
+gender,frontier,marked_personas,Qwen3-235B,19,2,0,0,0,0,99
+gender,frontier,opinionqa,Claude Sonnet 4,0,2,0,0,0,0,46
+gender,frontier,opinionqa,DeepSeek V3.2,0,2,0,0,0,0,46
+gender,frontier,opinionqa,GLM-4.7,0,0,5,0,0,5,38
+gender,frontier,opinionqa,GPT-5.2,0,1,0,0,0,2,45
+gender,frontier,opinionqa,Gemini 3 Flash,0,0,0,0,0,37,11
+gender,frontier,opinionqa,Kimi K2,0,0,0,0,0,0,48
+gender,frontier,opinionqa,Llama 4 Maverick,0,1,0,0,0,2,45
+gender,frontier,opinionqa,MiMo V2.5,0,1,2,0,0,3,42
+gender,frontier,opinionqa,Mistral Large,0,1,0,0,0,0,47
+gender,frontier,opinionqa,Qwen3-235B,0,1,0,0,0,0,47
+gender,frontier,refletters,Claude Sonnet 4,0,1,0,0,0,0,71
+gender,frontier,refletters,DeepSeek V3.2,0,0,0,0,0,0,72
+gender,frontier,refletters,GLM-4.7,0,1,8,0,0,0,63
+gender,frontier,refletters,GPT-5.2,0,2,0,0,0,0,70
+gender,frontier,refletters,Gemini 3 Flash,0,1,0,0,0,0,71
+gender,frontier,refletters,Kimi K2,0,0,0,0,0,0,72
+gender,frontier,refletters,Llama 4 Maverick,0,0,0,0,0,0,72
+gender,frontier,refletters,MiMo V2.5,0,0,0,0,0,0,72
+gender,frontier,refletters,Mistral Large,0,0,0,0,0,0,72
+gender,frontier,refletters,Qwen3-235B,0,1,0,0,0,0,71
+gender,frontier,winobias,Claude Sonnet 4,0,0,0,0,0,0,72
+gender,frontier,winobias,DeepSeek V3.2,0,1,0,0,0,0,71
+gender,frontier,winobias,GLM-4.7,0,1,11,0,0,0,60
+gender,frontier,winobias,GPT-5.2,0,0,0,0,0,0,72
+gender,frontier,winobias,Gemini 3 Flash,0,0,0,0,0,0,72
+gender,frontier,winobias,Kimi K2,0,0,7,0,0,0,65
+gender,frontier,winobias,Llama 4 Maverick,0,2,0,0,0,41,29
+gender,frontier,winobias,MiMo V2.5,0,1,3,0,0,8,60
+gender,frontier,winobias,Mistral Large,0,1,0,0,0,0,71
+gender,frontier,winobias,Qwen3-235B,0,1,0,0,0,0,71
+ses,frontier,bbq,Claude Sonnet 4,0,0,0,0,0,0,36
+ses,frontier,bbq,DeepSeek V3.2,0,1,0,0,0,0,35
+ses,frontier,bbq,GLM-4.7,0,0,0,0,0,0,36
+ses,frontier,bbq,GPT-5.2,0,1,0,0,0,0,35
+ses,frontier,bbq,Gemini 3 Flash,0,0,0,0,0,0,36
+ses,frontier,bbq,Kimi K2,0,0,0,0,0,0,36
+ses,frontier,bbq,Llama 4 Maverick,0,1,0,0,0,0,35
+ses,frontier,bbq,MiMo V2.5,0,1,0,0,0,0,35
+ses,frontier,bbq,Mistral Large,0,0,0,0,0,0,36
+ses,frontier,bbq,Qwen3-235B,0,0,0,0,0,0,36
+ses,frontier,biasasker,Claude Sonnet 4,0,0,0,0,0,22,14
+ses,frontier,biasasker,DeepSeek V3.2,0,0,0,0,0,0,36
+ses,frontier,biasasker,GLM-4.7,0,0,0,0,0,0,36
+ses,frontier,biasasker,GPT-5.2,0,1,0,0,0,13,22
+ses,frontier,biasasker,Gemini 3 Flash,0,1,0,0,0,34,1
+ses,frontier,biasasker,Kimi K2,0,1,0,0,0,0,35
+ses,frontier,biasasker,Llama 4 Maverick,0,1,0,0,0,1,34
+ses,frontier,biasasker,MiMo V2.5,0,0,0,0,0,3,33
+ses,frontier,biasasker,Mistral Large,0,0,0,0,0,0,36
+ses,frontier,biasasker,Qwen3-235B,0,0,0,0,0,0,36
+ses,frontier,biaslab,Claude Sonnet 4,0,0,0,0,0,48,0
+ses,frontier,biaslab,DeepSeek V3.2,0,1,0,0,0,0,47
+ses,frontier,biaslab,GLM-4.7,0,0,11,0,0,0,37
+ses,frontier,biaslab,GPT-5.2,0,0,0,0,0,0,48
+ses,frontier,biaslab,Gemini 3 Flash,0,1,0,0,0,24,23
+ses,frontier,biaslab,Kimi K2,0,1,1,0,0,1,45
+ses,frontier,biaslab,Llama 4 Maverick,0,1,0,0,0,15,32
+ses,frontier,biaslab,MiMo V2.5,0,3,0,0,0,7,38
+ses,frontier,biaslab,Mistral Large,0,1,0,0,0,0,47
+ses,frontier,biaslab,Qwen3-235B,0,0,0,0,0,0,48
+ses,frontier,bold,Claude Sonnet 4,0,0,0,0,0,0,72
+ses,frontier,bold,DeepSeek V3.2,0,0,0,0,0,0,72
+ses,frontier,bold,GLM-4.7,0,1,33,0,0,0,38
+ses,frontier,bold,GPT-5.2,0,0,0,0,0,0,72
+ses,frontier,bold,Gemini 3 Flash,0,1,0,0,0,0,71
+ses,frontier,bold,Kimi K2,0,0,1,0,0,0,71
+ses,frontier,bold,Llama 4 Maverick,0,1,0,0,0,0,71
+ses,frontier,bold,MiMo V2.5,0,0,0,0,0,0,72
+ses,frontier,bold,Mistral Large,0,0,0,0,0,0,72
+ses,frontier,bold,Qwen3-235B,0,0,0,0,0,0,72
+ses,frontier,discrimeval,Claude Sonnet 4,0,0,0,0,0,45,3
+ses,frontier,discrimeval,DeepSeek V3.2,0,1,0,0,0,0,47
+ses,frontier,discrimeval,GLM-4.7,0,0,6,0,0,0,42
+ses,frontier,discrimeval,GPT-5.2,0,0,0,0,0,14,34
+ses,frontier,discrimeval,Gemini 3 Flash,0,1,0,0,0,44,3
+ses,frontier,discrimeval,Kimi K2,0,0,0,0,0,0,48
+ses,frontier,discrimeval,Llama 4 Maverick,0,1,0,0,0,29,18
+ses,frontier,discrimeval,MiMo V2.5,0,0,1,0,0,1,46
+ses,frontier,discrimeval,Mistral Large,0,1,0,0,0,0,47
+ses,frontier,discrimeval,Qwen3-235B,0,0,0,0,0,0,48
+ses,frontier,hiring,Claude Sonnet 4,0,0,0,0,0,15,21
+ses,frontier,hiring,DeepSeek V3.2,0,0,0,0,0,0,36
+ses,frontier,hiring,GLM-4.7,0,0,7,0,0,0,29
+ses,frontier,hiring,GPT-5.2,0,0,0,0,0,34,2
+ses,frontier,hiring,Gemini 3 Flash,0,0,0,0,0,12,24
+ses,frontier,hiring,Kimi K2,0,0,0,0,0,0,36
+ses,frontier,hiring,Llama 4 Maverick,0,0,0,0,0,0,36
+ses,frontier,hiring,MiMo V2.5,0,1,10,0,0,4,21
+ses,frontier,hiring,Mistral Large,0,0,0,0,0,0,36
+ses,frontier,hiring,Qwen3-235B,0,0,0,0,0,0,36
+ses,frontier,marked_personas,Claude Sonnet 4,0,0,0,48,0,0,24
+ses,frontier,marked_personas,DeepSeek V3.2,0,0,0,31,0,0,41
+ses,frontier,marked_personas,GLM-4.7,0,0,16,35,0,0,21
+ses,frontier,marked_personas,GPT-5.2,0,2,0,27,0,0,43
+ses,frontier,marked_personas,Gemini 3 Flash,0,2,0,40,0,0,30
+ses,frontier,marked_personas,Kimi K2,0,0,1,53,0,0,18
+ses,frontier,marked_personas,Llama 4 Maverick,0,2,0,2,0,0,68
+ses,frontier,marked_personas,MiMo V2.5,0,1,0,25,0,0,46
+ses,frontier,marked_personas,Mistral Large,0,1,0,8,0,0,63
+ses,frontier,marked_personas,Qwen3-235B,0,0,0,23,0,0,49
+ses,frontier,opinionqa,Claude Sonnet 4,0,0,0,0,0,0,24
+ses,frontier,opinionqa,DeepSeek V3.2,0,0,0,0,0,0,24
+ses,frontier,opinionqa,GLM-4.7,0,0,0,0,0,0,24
+ses,frontier,opinionqa,GPT-5.2,0,0,0,0,0,0,24
+ses,frontier,opinionqa,Gemini 3 Flash,0,1,0,0,0,23,0
+ses,frontier,opinionqa,Kimi K2,0,2,0,0,0,0,22
+ses,frontier,opinionqa,Llama 4 Maverick,0,0,0,0,0,0,24
+ses,frontier,opinionqa,MiMo V2.5,0,0,0,0,0,0,24
+ses,frontier,opinionqa,Mistral Large,0,0,0,0,0,0,24
+ses,frontier,opinionqa,Qwen3-235B,0,1,0,0,0,0,23
