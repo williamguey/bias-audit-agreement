@@ -111,7 +111,7 @@ else:
 if fails:
     print(f"\n{fails} FAILURE(S) -- do not save until resolved")
     sys.exit(1)
-print("All canonical checks pass. Safe to compile and save.")
+print("Historical metadata checks pass; numerical checks still required below.")
 
 # ============================================================
 # SOURCE RECOMPUTE: rerun the canonical ranking pipeline from
@@ -123,10 +123,10 @@ def _recompute_from_source():
     try:
         import numpy as np, pandas as pd, scipy.stats as st
     except Exception as e:
-        print(f"[skip] source recompute needs numpy/pandas/scipy: {e}"); return 0
+        print(f"[FAIL] source recompute needs numpy/pandas/scipy: {e}"); return 1
     import os
     if not os.path.exists(os.path.join(DATA,"age_scores.json")):
-        print("[skip] score files not found"); return 0
+        print("[FAIL] score files not found"); return 1
     DISP=['GPT-5.2','Claude Sonnet 4','Gemini 3 Flash','Llama 4 Maverick','Qwen3-235B',
           'DeepSeek V3.2','GLM-4.7','MiMo V2.5','Kimi K2','Mistral Large']
     def kendall_w(M):
@@ -177,3 +177,4 @@ _src_fails = _recompute_from_source()
 if _src_fails:
     print(f"\n{_src_fails} source-recompute failures.")
     sys.exit(1)
+print("Historical construct checks passed. This is not validation of all paper claims.")

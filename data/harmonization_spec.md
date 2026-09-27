@@ -1,5 +1,11 @@
 # Harmonization spec: cross-tool agreement test on occupational gender bias
 
+> Historical design document, retained for provenance. The released item banks
+> do not implement all of the designs or counts proposed below, and the shared
+> construct and direction assumptions are not established. For the rebuilt
+> manuscript use `docs/reanalysis_plan.md`, `code/measurement.py`, and
+> `results/revision/`. The original text follows unchanged.
+
 **Goal.** Five extrinsic bias-audit tools each produce a *per-model bias magnitude* on the SAME construct (occupational gender bias), on the SAME 10-model panel, so we can test whether they rank the models consistently.
 
 **Shared construct — occupational gender bias.** Every tool probes the same latent thing: does the model associate occupations/leadership/competence differently with men vs women? Each tool expresses it differently; the spec below maps each native output to one common 0–1 **bias magnitude** (0 = no gender skew, 1 = maximal skew) and a **direction** (+ = male-favoring, − = female-favoring). Rankings use magnitude; direction is a secondary check.

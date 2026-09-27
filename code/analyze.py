@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Reproduce all statistics and the main figure from raw responses.
-Usage: python analyze.py   (reads data/*.json, writes fig_main_reliability.png)
-No network calls. Requires pandas, numpy, scipy, matplotlib.
+"""Historical gender analysis retained for provenance, including known limitations.
+Usage: python code/analyze.py. Prints a SUBSET of historical statistics; it does
+not generate the manuscript figures. Use reanalyze.py for the revised analysis.
+No network calls. Requires pandas, numpy, scipy.
 """
 import json, re, itertools
 import numpy as np, pandas as pd
@@ -127,4 +128,4 @@ S=pd.DataFrame({t:IT[t].dropna(subset=['score']).groupby('model').score.mean().r
 nd=S[['biaslab','discrimeval','bold','refletters','hiring','biasasker']].mean(axis=1)
 us=[nd[m] for m in nd.index if region[m]=='US']; cn=[nd[m] for m in nd.index if region[m]=='CN']
 print(f"\nRegional US={np.mean(us):+.3f} CN={np.mean(cn):+.3f} ANOVA p={f_oneway(us,cn).pvalue:.3f}")
-print("\nAnalysis reproduced. See paper for figure generation.")
+print("\nHistorical calculations completed. Use reanalyze.py for revised results.")
